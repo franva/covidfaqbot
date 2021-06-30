@@ -1,0 +1,10 @@
+# uvicorn
+fastapi
+uvloop
+
+gunicorn
+uvicorn
+
+fastai
+pytorch
+pandas
