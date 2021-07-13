@@ -30,11 +30,11 @@ def read_root():
 async def translate(text: str):
     if text:
         result = classifier.get_prediction(text)
-        resultJson = {
-            "category": result[0],
-            "probability": result[1]
-        }
-        json_compatible_item_data = jsonable_encoder(resultJson)
+        # resultJson = {
+        #     "category": result[],
+        #     "probability": result[1]
+        # }
+        json_compatible_item_data = jsonable_encoder(result)
         return JSONResponse(content=json_compatible_item_data)
 
 
